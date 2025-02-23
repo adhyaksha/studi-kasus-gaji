@@ -4,7 +4,7 @@ let bonus20Hari = 50000
 let i = 1
 
 let absensi = prompt("berapa hari kamu masuk")
-if (absensi <= 20) {
+if (absensi <= 30) {
     let hasil = (gaji + bonusPerhari * absensi);
     alert(`gaji anda terdapat ${hasil}`)
     let tidakMasuk = prompt("berapa lama kamu tidak masuk")
@@ -13,7 +13,7 @@ if (absensi <= 20) {
         alert(`gaji anda di  potong ${result}`)
     }
 
-}else if (absensi <= 21) {
+}else if (absensi >= 21) {
     let hasil = (gaji + bonusPerhari * absensi + bonus20Hari)
     alert(`horeeeee gaji anda di tambah `)
     let tidakMasuk = prompt("berapa lama kamu tidak masuk")
